@@ -1,0 +1,31 @@
+Here is the assignment:
+
+Create an hint object literal hint named animal with the attributes classification, species, and sound and the method makeSound (just like your cat in a previous question).
+
+makeSound should be a hint method hint that returns the string "Please define a function named 'makeSound' on my \"child\"."
+
+classification should have a default value of "Please define a value for 'classification'."
+
+species should have a default value of "Please define a value for 'species'."
+
+sound should have a default value of "Please define a value for 'sound'."
+
+
+
+
+```js
+let animal = {classification : `Please define a value for 'classification'.`, species : `Please define a value for 'species'.`, sound : `Please define a value for 'sound'.`, makeSound(){
+  return `Please define a function named 'makeSound' on my "child".`
+  }
+};
+
+//test
+var emptyAnimal = Object.create(animal);
+console.log(
+    emptyAnimal.classification === "Please define a value for 'classification'." &&
+    emptyAnimal.species === "Please define a value for 'species'." &&
+    emptyAnimal.sound === "Please define a value for 'sound'." &&
+    emptyAnimal.makeSound() === "Please define a function named 'makeSound' on my \"child\"."
+)
+
+```
